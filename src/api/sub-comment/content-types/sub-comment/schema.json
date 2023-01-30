@@ -25,6 +25,10 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::comment.comment"
+    },
+    "likes": {
+      "type": "integer",
+      "default": 0
     }
   }
 }
