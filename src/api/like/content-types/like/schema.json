@@ -4,7 +4,8 @@
   "info": {
     "singularName": "like",
     "pluralName": "likes",
-    "displayName": "Like"
+    "displayName": "Like",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -26,9 +27,9 @@
     },
     "post": {
       "type": "relation",
-      "relation": "manyToOne",
+      "relation": "oneToOne",
       "target": "api::post.post",
-      "inversedBy": "likes"
+      "inversedBy": "like"
     }
   }
 }

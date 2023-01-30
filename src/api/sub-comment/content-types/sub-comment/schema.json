@@ -4,7 +4,8 @@
   "info": {
     "singularName": "sub-comment",
     "pluralName": "sub-comments",
-    "displayName": "SubComment"
+    "displayName": "SubComment",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -22,9 +23,8 @@
     },
     "comment": {
       "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::comment.comment",
-      "inversedBy": "sub_comments"
+      "relation": "oneToOne",
+      "target": "api::comment.comment"
     }
   }
 }

@@ -25,10 +25,16 @@
       "type": "media",
       "multiple": false
     },
-    "likes": {
+    "like": {
       "type": "relation",
-      "relation": "oneToMany",
+      "relation": "oneToOne",
       "target": "api::like.like",
+      "mappedBy": "post"
+    },
+    "comment": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::comment.comment",
       "mappedBy": "post"
     }
   }
