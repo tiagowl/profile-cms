@@ -32,9 +32,9 @@
     },
     "post": {
       "type": "relation",
-      "relation": "oneToOne",
+      "relation": "manyToOne",
       "target": "api::post.post",
-      "inversedBy": "comment"
+      "inversedBy": "comments"
     }
   }
 }
